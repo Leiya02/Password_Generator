@@ -23,12 +23,16 @@ console.log("User Input" , password)
 
 // function for generating new password
 function generatePassword() {
-  var myLength = parseInt(prompt("How long is your password? Must be between 8 and 128"));
-};
+  var myPrompt = parseInt(
+    prompt("How long is your password? Must be between 8 and 128") , 120
+    );
+
 
 // password must be atleast 8 charaters and less than 128
-  if (myLength < 8 || myLength > 128) {
+  if (myPrompt < 8 || myPrompt > 128) {
     alert("does not meet criteria");
+
+  };
 
 // Ask user for numbers
   confirm ("Do you want to use numbers?")    
